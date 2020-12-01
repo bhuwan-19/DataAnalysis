@@ -1,9 +1,8 @@
-# FloweringTime
+# DataProcssingonCSV
 
 ## Overview
 
-This project is to analyze the relationship between the total light integral and flowering time, the total temperature 
-integral and flowering time, and the max/min temperature value per day and flowering time during the specific period.
+This project is to analyze data in the CSV files.
 The main library of this project is pandas, matplotlib and numpy.
 
 ## Structure
@@ -11,7 +10,7 @@ The main library of this project is pandas, matplotlib and numpy.
 - src
 
     The source code with functionality to import the necessary information from the csv and excel file and process the 
-    data to calculate the integral and max/min value per day.
+    data to calculate the integral and max/min value.
 
 - utils
 
@@ -27,23 +26,20 @@ The main library of this project is pandas, matplotlib and numpy.
 
 - settings
 
-    * The start time and end time can be set by START_DATE and END_DATE
-    * The NORMALIZE_INDEX to set, it's default is 1,000,000
+    * Several settings for this project
 
 ## Installation
 
 - Environment
 
-    Ubuntu16.04+, Windows8+, Python2.7
+    Ubuntu18.04, Windows10, Python3.6
 
 - Dependency Installation
-
-    In case Python 2.7 is not installed for all users, the Microsoft Visual C++ 2008 (64 bit or 32 bit for Python 2.7).
-
+    
     Please go ahead to this project directory and run the following command in terminal
     
     ```
-        pip install -r requirements.txt
+        pip3 install -r requirements.txt
     ```
 
 ## Execution
@@ -53,6 +49,3 @@ The main library of this project is pandas, matplotlib and numpy.
     ```
         python app.py
     ```
-
-- You can look at the process of running this project, and finally three graphs(Light-Date, Temperature-Date, 
-Max/Min Temperature-Date) are saved in plot directory.
